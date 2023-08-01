@@ -1,3 +1,4 @@
+
 import styled from 'styled-components/native'
 
 export const CategoryCardWrapper = styled.View`
@@ -8,10 +9,25 @@ export const CategoryCardWrapper = styled.View`
     border-collapse: collapse;
     margin-top: 5%;
     justify-items: center;
+    flex-direction: row;
 `
 export const CardTitle = styled.Text`
-
+    width: 35%;
+    font-size: 20px;
+    margin: 0 -2px;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #0A220F;
+    height: 25%;
+    top: -1px;
 `
+
+export const CardTotal = styled.Text`
+    width: 60%;
+    font-size: 25px;
+    top: 20%;
+    right: 120%;
+`
+
 export const ClosePopUpPressable = styled.Pressable`
     background: #2196F3;
     width: 30%;

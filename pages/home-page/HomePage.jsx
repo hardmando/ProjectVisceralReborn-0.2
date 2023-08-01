@@ -16,15 +16,42 @@ const HomePage = ({active}) => {
                     height: 1300
                 }}
             >
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
+                <CategoryCard
+                    title='Food'
+                    cardTotal='9999.99'
+                />
+                <CategoryCard 
+                    title='Delivery'
+                    cardTotal='9999.99'
+                />
+                <CategoryCard 
+                    title='Smokes'
+                    cardTotal='9999.99'
+                />
+                <CategoryCard 
+                    title='Drinks'
+                    cardTotal='9999.99'
+                />
+                <CategoryCard 
+                    title='Electronics'
+                    cardTotal='9999.99'
+                />
+                <CategoryCard 
+                    title='Clothes'
+                    cardTotal='9999.99'
+                />
+                <CategoryCard 
+                    title='Games'
+                    cardTotal='9999.99'
+                />
+                <CategoryCard 
+                    title='Taxi'
+                    cardTotal='9999.99'         
+                />
+                <CategoryCard 
+                    title='Misc'
+                    cardTotal='9999.99'
+                />
             </HomePageScrollWrapper>
         </HomePageWrapper>
     )
