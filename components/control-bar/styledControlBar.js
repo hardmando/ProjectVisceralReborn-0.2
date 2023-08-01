@@ -3,7 +3,7 @@ import { View } from 'react-native'
 
 export const StyledControlBarWrapper = styled.View`
     position: absolute;
-    bottom: -0.65%;
+    bottom: -1%;
     width: 100%;
     height: 110px;
     flex-direction: row;

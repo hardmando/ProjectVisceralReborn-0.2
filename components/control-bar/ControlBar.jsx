@@ -1,10 +1,22 @@
 import {StyledControlBarWrapper } from './styledControlBar';
-import { useState } from 'react'
 import ControlButton from '../elements/control-button/ControlButton';
+import DropShadow from 'react-native-drop-shadow';
 
 const ControlBar = ({activeTab,  setActiveTab}) => {
 
     return (
+        <DropShadow
+        style={{
+            shadowColor: "#0A220F",
+            shadowOffset: {
+                width: 0,
+                height: -0.5,
+            },
+            shadowOpacity: 1,
+            shadowRadius: 0.2,
+            bottom: '-1%'
+        }}
+        >
         <StyledControlBarWrapper>
             <ControlButton
                 active={activeTab === 'settings' ? true : false}
@@ -28,6 +40,7 @@ const ControlBar = ({activeTab,  setActiveTab}) => {
                 icon='user'
             />
         </StyledControlBarWrapper>
+        </DropShadow>
     );
 }
 export default ControlBar;

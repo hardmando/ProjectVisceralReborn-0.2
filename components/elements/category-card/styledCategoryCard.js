@@ -1,10 +1,11 @@
 import styled from 'styled-components/native'
 
 export const CategoryCardWrapper = styled.View`
-    background: red;
-    width: 83%;
+    background: #F7D9F6;
+    width: 101%;
     height: 8.5%;
-    border-radius: 10%;
+    border: 1px solid #0A220F;
+    border-collapse: collapse;
     margin-top: 5%;
     justify-items: center;
 `

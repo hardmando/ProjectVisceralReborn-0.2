@@ -26,53 +26,18 @@ const Month = () => {
     <MonthWrapper>
         <DropShadow
             style={{
-                shadowColor: "#583252",
+                shadowColor: "#0A220F",
                 shadowOffset: {
-                    width: 0,
-                    height: 2,
+                    width: -2,
+                    height: 0,
                 },
-                shadowOpacity: 0.3,
-                shadowRadius: 3,
+                shadowOpacity: 1,
+                shadowRadius: 0.2,
             }}
         >
-            <MaskedView
-                style={{
-                    marginTop: 0,
-                    height: 50
-                }}
-                maskElement={
-                    <View
-                        style={{
-                            // Transparent background because mask is based off alpha channel.
-                            backgroundColor: 'transparent',
-                            flex: 1,
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                    >
-                        <MonthText>
-                            {monthName}
-                        </MonthText>
-                    </View>
-                }     
-            >
-                <LinearGradient
-                    start={[0,0]}
-                    end={[1,1]} 
-                    colors={['#FF8ABD', '#FF8A88']} 
-                    style={{
-                        height: '100%',
-                        alignContent: 'center',
-                        justifyContent: 'center',
-                        opacity: 1,
-                        borderRadius: 9
-                    }}   
-                >
-                    <View 
-                        style={{width: 100, height: 100}}
-                    />
-                </LinearGradient>
-            </MaskedView>
+            <MonthText>
+                {monthName}
+            </MonthText>
         </DropShadow>
     </MonthWrapper>
     )

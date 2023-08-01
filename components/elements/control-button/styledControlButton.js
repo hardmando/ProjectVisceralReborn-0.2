@@ -9,12 +9,16 @@ ${props =>
             width: 50%;
             height: 100%;
             z-index: 1002;
+            background: #F7D9F6;
+            border-radius: 10%;
+            border: 0.5px solid #0A220F;
         `
     : props.active === false ?
         `
             width: 25%;
             height: 90%;
             z-index: 0;
+            background: #E9CEE8;
         `
     : 
         `
